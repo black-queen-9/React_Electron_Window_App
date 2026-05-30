@@ -4,25 +4,24 @@
   "private": true,
   "main": "electron/main.js",
   "scripts": {
-  "dev:ui": "vite --port 5173",
-  "dev:electron": "electron .",
-  "dev": "concurrently \"npm:dev:ui\" \"npm:dev:electron\"",
-  "build:ui": "vite build",
-  "start": "electron .",
-  "pack": "electron-builder --dir",
-  "dist": "electron-builder"
-}
-,
+    "dev:ui": "vite --port 5173",
+    "dev:electron": "electron .",
+    "dev": "concurrently \"npm:dev:ui\" \"npm:dev:electron\"",
+    "build:ui": "vite build",
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
     "concurrently": "^8.0.0",
-    "electron": "latest",
+    "electron": "^42.3.0",
     "electron-builder": "^24.0.0",
-    "wait-on": "^7.0.0",
     "vite": "^5.0.0",
-    "@vitejs/plugin-react": "^4.0.0"
+    "wait-on": "^7.0.0"
   }
 }
